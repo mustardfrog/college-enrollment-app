@@ -17,8 +17,7 @@
           <option value="bsm">Bachelor of Science Basic Medical Sciences</option>
           <option value="bsba">Bachelor of Science Business Administration</option>
         </select>
-        <br><br>
-        <input type="submit" value="Submit">
+        <br>    
       </form>
 
       <br><br>
@@ -32,10 +31,11 @@
         </select>
 
     <br><br>
+
         <div id="f1" style="display:none">
             <form name="form1">
             <label for="year">Term: </label>
-                <select id="opts" onchange="showForm()">
+                <select id="row" onchange="showTable()">
                     <option value=""></option>
                     <option value="4">1st Term</option>
                     <option value="5">2nd Term</option>
@@ -48,7 +48,7 @@
         <div id="f2" style="display:none">
             <form name="form2">
                 <label for="year">Term: </label>
-                <select id="opts" onchange="showForm()">
+                <select id="row" onchange="showTable()">
                     <option value=""></option>
                     <option value="4">1st Term</option>
                     <option value="5">2nd Term</option>
@@ -58,19 +58,19 @@
             <br>
         </div>
         <div id="f3" style="display:none">
-            <form name="form">
+            <form name="form3">
                 <label for="year">Term: </label>
-                <select id="opts" onchange="showForm()">
+                <select id="row" onchange="showTable()">
                     <option value=""></option>
                     <option value="4">1st Term</option>
                     <option value="5">2nd Term</option>
-                    <option value="2">3rd Term</option>
+                    <option value="6">3rd Term</option>
                 </select>
             </form>
             <br>
         </div>
 
-        <div id="f4" style="display: none">
+        <div id="f1">
             <table >
                 <tr>
                     <td>Subject</td>
@@ -80,38 +80,39 @@
                 </tr>
                     <td>Filipino</td>
                     <td>Monday</td>
-                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Filipino">
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Filipino" required>
                     </td>
                 </td>
                 <tr>
                     <td>Math</td>
                     <td>Tuesday</td>
-                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Math">
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Math" required>
                     </td>
                 </tr>
                 <tr>
                     <td>Science</td>
                     <td>Wednesday</td>
-                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Science">
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Science" required>
                     </td>
                 </tr>
                 <tr>
                     <td>PE</td>
                     <td>Thursday</td>
-                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="PE" required>
                     </td>
                 </tr>
                 <tr>
                     <td>Araling Panlipunan</td>
                     <td>Friday</td>
-                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="AP" required>
                     </td>
                 </tr>
     
                 <br>
-                <td><input type="button" onclick="" value="Submit form"></td>
+                <td><input type="submit" onclick="nextPage()" value="Confirm"></td>
                 
             </table>
+
         </div>
         
 
